@@ -8,9 +8,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent / "src"))
 import pandas as pd
 import streamlit as st
 
-from datalab.pipeline import DataPreprocessor, FeatureEngineer
+from datalabsn.pipeline import DataPreprocessor, FeatureEngineer
 
-st.set_page_config(page_title="Pipeline · DataLab", page_icon="🔧", layout="wide")
+st.set_page_config(page_title="Pipeline · DataLabSn", page_icon="🔧", layout="wide")
 st.title("🔧 Pipeline de traitement")
 st.caption("Configurez et appliquez votre pipeline de preprocessing.")
 

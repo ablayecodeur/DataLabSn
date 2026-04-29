@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🔬 DataLab
+# 🔬 DataLabSn
 
 **Plateforme d'analyse de données et de machine learning**
 
@@ -27,13 +27,13 @@ Pipeline de traitement · Modèles prédictifs · Dashboard interactif
 
 ## Présentation
 
-DataLab est une plateforme complète pour l'analyse de données et le machine learning, conçue pour permettre à des data scientists, chercheurs et développeurs d'explorer des datasets, construire des pipelines de traitement, entraîner et évaluer des modèles prédictifs, et prédire de nouvelles données — entièrement depuis une interface visuelle Streamlit ou en ligne de commande Python.
+DataLabSn est une plateforme complète pour l'analyse de données et le machine learning, conçue pour permettre à des data scientists, chercheurs et développeurs d'explorer des datasets, construire des pipelines de traitement, entraîner et évaluer des modèles prédictifs, et prédire de nouvelles données — entièrement depuis une interface visuelle Streamlit ou en ligne de commande Python.
 
 ```
 Données brutes → Pipeline → Modèle entraîné → Évaluation → Prédictions
 ```
 
-### Ce que DataLab fait pour vous
+### Ce que DataLabSn fait pour vous
 
 - **Aucun code requis** pour les tâches courantes via le dashboard Streamlit
 - **API Python complète** pour les workflows automatisés et les pipelines CI/CD
@@ -134,8 +134,8 @@ Données brutes → Pipeline → Modèle entraîné → Évaluation → Prédict
 
 ```bash
 # 1. Cloner le dépôt
-git clone https://github.com/votre-username/DataLab.git
-cd DataLab
+git clone https://github.com/votre-username/DataLabSn.git
+cd DataLabSn
 
 # 2. Créer et activer un environnement virtuel
 python -m venv .venv
@@ -166,9 +166,9 @@ Ouvrez **http://localhost:8501** dans votre navigateur.
 ## Structure du projet
 
 ```
-DataLab/
+DataLabSn/
 │
-├── 📁 src/datalab/                   # Code source principal
+├── 📁 src/datalabsn/                   # Code source principal
 │   ├── pipeline/
 │   │   ├── ingestion.py              # Chargement de données multi-format
 │   │   ├── preprocessing.py          # Imputation, encodage, normalisation
@@ -273,15 +273,15 @@ DataLab/
 
 ## Utilisation programmatique
 
-DataLab peut être utilisé entièrement en Python, sans le dashboard.
+DataLabSn peut être utilisé entièrement en Python, sans le dashboard.
 
 ### Exemple complet — Classification
 
 ```python
-from datalab.pipeline import DataIngestion, DataPreprocessor, FeatureEngineer
-from datalab.models import ModelTrainer
-from datalab.models.predictor import Predictor
-from datalab.evaluation import Evaluator
+from datalabsn.pipeline import DataIngestion, DataPreprocessor, FeatureEngineer
+from datalabsn.models import ModelTrainer
+from datalabsn.models.predictor import Predictor
+from datalabsn.evaluation import Evaluator
 
 # ── 1. Chargement ────────────────────────────────────────────────────────────
 ingestion = DataIngestion()
@@ -340,8 +340,8 @@ print(f"Prédiction : {prediction[0]}  (confiance : {confidence:.1%})")
 ### Comparer tous les modèles
 
 ```python
-from datalab.pipeline import DataIngestion, DataPreprocessor
-from datalab.models import ModelTrainer
+from datalabsn.pipeline import DataIngestion, DataPreprocessor
+from datalabsn.models import ModelTrainer
 
 ingestion = DataIngestion()
 X, y, task = ingestion.load_sample("wine")
@@ -365,7 +365,7 @@ Gradient Boosting       1.0000      0.9722    0.9651  0.0284      0.125         
 ### Charger votre propre fichier
 
 ```python
-from datalab.pipeline import DataIngestion
+from datalabsn.pipeline import DataIngestion
 
 ingestion = DataIngestion()
 
@@ -392,7 +392,7 @@ pytest tests/ -v
 ### Avec couverture de code
 
 ```bash
-pytest tests/ --cov=src/datalab --cov-report=html
+pytest tests/ --cov=src/datalabsn --cov-report=html
 # Ouvrir htmlcov/index.html pour le rapport détaillé
 ```
 
@@ -411,11 +411,11 @@ pytest tests/test_evaluation.py -v   # Éval     : 9 tests
 
 Module                              Stmts  Cover
 ────────────────────────────────────────────────
-datalab.pipeline.preprocessing        89    87%
-datalab.pipeline.validator            55    93%
-datalab.models.registry               26   100%
-datalab.models.trainer                79    86%
-datalab.evaluation.metrics            40    80%
+datalabsn.pipeline.preprocessing        89    87%
+datalabsn.pipeline.validator            55    93%
+datalabsn.models.registry               26   100%
+datalabsn.models.trainer                79    86%
+datalabsn.evaluation.metrics            40    80%
 ────────────────────────────────────────────────
 TOTAL                                514    80%
 ```
@@ -466,7 +466,7 @@ export DATALAB_CV_FOLDS=5
 ### Via code Python
 
 ```python
-from datalab.utils import Config
+from datalabsn.utils import Config
 
 cfg = Config.from_yaml("configs/default.yaml")
 # ou

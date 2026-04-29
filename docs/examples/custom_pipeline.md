@@ -9,10 +9,10 @@ sys.path.insert(0, "src")
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from datalab.pipeline import DataIngestion, DataPreprocessor, FeatureEngineer, DataValidator
-from datalab.models import ModelTrainer
-from datalab.models.predictor import Predictor
-from datalab.evaluation import Evaluator
+from datalabsn.pipeline import DataIngestion, DataPreprocessor, FeatureEngineer, DataValidator
+from datalabsn.models import ModelTrainer
+from datalabsn.models.predictor import Predictor
+from datalabsn.evaluation import Evaluator
 
 # ═══════════════════════════════════════════════════════════════════════
 # 1. CHARGEMENT ET VALIDATION

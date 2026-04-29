@@ -3,7 +3,7 @@
 ## DataIngestion
 
 ```python
-from datalab.pipeline import DataIngestion
+from datalabsn.pipeline import DataIngestion
 ```
 
 ### `load_file(path, target_col=None, **kwargs)`
@@ -51,7 +51,7 @@ X, y, task = ingestion.load_sample("breast_cancer")
 ## DataPreprocessor
 
 ```python
-from datalab.pipeline import DataPreprocessor
+from datalabsn.pipeline import DataPreprocessor
 ```
 
 ### `analyze(df)`
@@ -116,7 +116,7 @@ X_new_processed = prep.transform(X_new)
 ## FeatureEngineer
 
 ```python
-from datalab.pipeline import FeatureEngineer
+from datalabsn.pipeline import FeatureEngineer
 ```
 
 ### `select_k_best(X, y, k, task, score_func)`
@@ -163,7 +163,7 @@ Identifie les features fortement corrélées.
 ## DataValidator
 
 ```python
-from datalab.pipeline import DataValidator
+from datalabsn.pipeline import DataValidator
 ```
 
 ### `validate(X, y, min_rows, max_missing_pct)`

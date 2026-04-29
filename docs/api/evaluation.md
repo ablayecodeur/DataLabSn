@@ -3,7 +3,7 @@
 ## Evaluator
 
 ```python
-from datalab.evaluation import Evaluator
+from datalabsn.evaluation import Evaluator
 ```
 
 ### `evaluate_classification(y_true, y_pred, y_proba, average)`

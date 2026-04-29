@@ -1,12 +1,12 @@
 # Guide de contribution
 
-Merci de l'intérêt que vous portez à DataLab ! Ce guide explique comment contribuer efficacement au projet.
+Merci de l'intérêt que vous portez à DataLabSn ! Ce guide explique comment contribuer efficacement au projet.
 
 ---
 
 ## Avant de commencer
 
-- Consultez les [issues ouvertes](https://github.com/votre-username/DataLab/issues) pour éviter les doublons
+- Consultez les [issues ouvertes](https://github.com/votre-username/DataLabSn/issues) pour éviter les doublons
 - Pour une nouvelle fonctionnalité, ouvrez d'abord une issue pour en discuter
 - Pour un bug fix, vous pouvez directement ouvrir une Pull Request
 
@@ -16,8 +16,8 @@ Merci de l'intérêt que vous portez à DataLab ! Ce guide explique comment cont
 
 ```bash
 # 1. Forker et cloner
-git clone https://github.com/votre-fork/DataLab.git
-cd DataLab
+git clone https://github.com/votre-fork/DataLabSn.git
+cd DataLabSn
 
 # 2. Créer un environnement virtuel
 python -m venv .venv
@@ -87,7 +87,7 @@ test: ajouter tests pour evaluate_clustering avec labels négatifs (DBSCAN)
 ### Tests
 - Tout nouveau code doit avoir des tests dans `tests/`
 - Les tests doivent passer sans erreur : `pytest tests/ -v`
-- La couverture ne doit pas descendre sous 75% : `pytest --cov=src/datalab`
+- La couverture ne doit pas descendre sous 75% : `pytest --cov=src/datalabsn`
 - Utilisez des fixtures pytest pour les données partagées
 
 ### Exemple de test bien structuré
@@ -115,7 +115,7 @@ class TestMaNouvelleFeature:
 
 ## Ajouter un nouvel algorithme ML
 
-1. Ouvrez `src/datalab/models/registry.py`
+1. Ouvrez `src/datalabsn/models/registry.py`
 2. Ajoutez l'entrée dans `CLASSIFIERS` ou `REGRESSORS` :
 
 ```python
@@ -144,7 +144,7 @@ def test_xgboost_instantiate(self):
 
 ## Ajouter un nouveau dataset intégré
 
-1. Ouvrez `src/datalab/pipeline/ingestion.py`
+1. Ouvrez `src/datalabsn/pipeline/ingestion.py`
 2. Ajoutez une entrée dans `SAMPLE_DATASETS` et une méthode `_load_*`
 3. Référencez la méthode dans le `dict` de `load_sample()`
 4. Ajoutez un test dans `tests/test_pipeline.py`
@@ -154,7 +154,7 @@ def test_xgboost_instantiate(self):
 ## Checklist avant d'ouvrir une PR
 
 - [ ] Les tests passent : `pytest tests/ -v`
-- [ ] La couverture est stable : `pytest --cov=src/datalab`
+- [ ] La couverture est stable : `pytest --cov=src/datalabsn`
 - [ ] Le code suit PEP 8
 - [ ] Les nouvelles fonctions/classes ont des type hints
 - [ ] La documentation est mise à jour si nécessaire
@@ -165,4 +165,4 @@ def test_xgboost_instantiate(self):
 
 ## Questions ?
 
-Ouvrez une [Discussion GitHub](https://github.com/votre-username/DataLab/discussions) ou une issue avec le label `question`.
+Ouvrez une [Discussion GitHub](https://github.com/votre-username/DataLabSn/discussions) ou une issue avec le label `question`.

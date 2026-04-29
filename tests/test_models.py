@@ -10,9 +10,9 @@ import pandas as pd
 import pytest
 from sklearn import datasets as sk_datasets
 
-from datalab.models import ModelRegistry, ModelTrainer, CLASSIFIERS, REGRESSORS
-from datalab.models.predictor import Predictor
-from datalab.pipeline import DataPreprocessor
+from datalabsn.models import ModelRegistry, ModelTrainer, CLASSIFIERS, REGRESSORS
+from datalabsn.models.predictor import Predictor
+from datalabsn.pipeline import DataPreprocessor
 
 
 @pytest.fixture

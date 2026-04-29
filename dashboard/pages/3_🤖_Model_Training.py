@@ -10,10 +10,10 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-from datalab.models import CLASSIFIERS, REGRESSORS, ModelRegistry, ModelTrainer
-from datalab.models.predictor import Predictor
+from datalabsn.models import CLASSIFIERS, REGRESSORS, ModelRegistry, ModelTrainer
+from datalabsn.models.predictor import Predictor
 
-st.set_page_config(page_title="Entraînement · DataLab", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="Entraînement · DataLabSn", page_icon="🤖", layout="wide")
 st.title("🤖 Entraînement des modèles")
 st.caption("Entraînez, optimisez et comparez vos modèles de machine learning.")
 

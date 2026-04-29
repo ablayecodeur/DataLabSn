@@ -6,10 +6,10 @@ Workflow complet en moins de 30 lignes : chargement → preprocessing → entra�
 import sys
 sys.path.insert(0, "src")
 
-from datalab.pipeline import DataIngestion, DataPreprocessor
-from datalab.models import ModelTrainer
-from datalab.models.predictor import Predictor
-from datalab.evaluation import Evaluator
+from datalabsn.pipeline import DataIngestion, DataPreprocessor
+from datalabsn.models import ModelTrainer
+from datalabsn.models.predictor import Predictor
+from datalabsn.evaluation import Evaluator
 
 # ── Chargement ────────────────────────────────────────────────────────────────
 ingestion = DataIngestion()
@@ -95,7 +95,7 @@ X, y = ingestion.load_file(
 predictor.save("models/saved/iris_rf.joblib")
 
 # Recharger dans un autre script
-from datalab.models.predictor import Predictor
+from datalabsn.models.predictor import Predictor
 import pandas as pd
 
 predictor = Predictor.load("models/saved/iris_rf.joblib")

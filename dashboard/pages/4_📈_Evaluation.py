@@ -13,9 +13,9 @@ import plotly.graph_objects as go
 import streamlit as st
 from sklearn.metrics import roc_curve, auc, precision_recall_curve
 
-from datalab.evaluation import Evaluator
+from datalabsn.evaluation import Evaluator
 
-st.set_page_config(page_title="Évaluation · DataLab", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Évaluation · DataLabSn", page_icon="📈", layout="wide")
 st.title("📈 Évaluation des modèles")
 st.caption("Analysez les performances de vos modèles en profondeur.")
 

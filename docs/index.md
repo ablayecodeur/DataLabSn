@@ -1,6 +1,6 @@
-# Documentation DataLab
+# Documentation DataLabSn
 
-Bienvenue dans la documentation complète de **DataLab**, une plateforme d'analyse de données et de machine learning basée sur Pandas, scikit-learn et Streamlit.
+Bienvenue dans la documentation complète de **DataLabSn**, une plateforme d'analyse de données et de machine learning basée sur Pandas, scikit-learn et Streamlit.
 
 ---
 
@@ -27,9 +27,9 @@ Bienvenue dans la documentation complète de **DataLab**, une plateforme d'analy
 
 | Module | Document |
 |---|---|
-| `datalab.pipeline` | [api/pipeline.md](api/pipeline.md) |
-| `datalab.models` | [api/models.md](api/models.md) |
-| `datalab.evaluation` | [api/evaluation.md](api/evaluation.md) |
+| `datalabsn.pipeline` | [api/pipeline.md](api/pipeline.md) |
+| `datalabsn.models` | [api/models.md](api/models.md) |
+| `datalabsn.evaluation` | [api/evaluation.md](api/evaluation.md) |
 
 ### Exemples
 
@@ -49,7 +49,7 @@ Bienvenue dans la documentation complète de **DataLab**, une plateforme d'analy
                    └──────────────┬──────────────────────┘
                                   │ utilise
                    ┌──────────────▼──────────────────────┐
-                   │          src/datalab/               │
+                   │          src/datalabsn/               │
                    │                                     │
                    │  pipeline/     models/    evaluation/│
                    │  ─────────     ───────    ──────────│
@@ -60,7 +60,7 @@ Bienvenue dans la documentation complète de **DataLab**, une plateforme d'analy
                    └─────────────────────────────────────┘
 ```
 
-DataLab suit une architecture **pipeline → modèle → évaluation** où chaque composant est indépendant et réutilisable directement en Python, sans passer par le dashboard.
+DataLabSn suit une architecture **pipeline → modèle → évaluation** où chaque composant est indépendant et réutilisable directement en Python, sans passer par le dashboard.
 
 ---
 
@@ -97,7 +97,7 @@ Fichier CSV / Dataset intégré
 
 ## Conventions
 
-- Toutes les classes sont importables depuis `datalab.pipeline`, `datalab.models`, `datalab.evaluation`
+- Toutes les classes sont importables depuis `datalabsn.pipeline`, `datalabsn.models`, `datalabsn.evaluation`
 - `fit_transform()` ajuste sur les données courantes ; `transform()` réapplique les paramètres appris
 - `TrainingResult` contient tout ce qui est nécessaire pour l'évaluation et les prédictions
-- Les logs sont écrits dans `logs/datalab.log` et sur `stdout`
+- Les logs sont écrits dans `logs/datalabsn.log` et sur `stdout`

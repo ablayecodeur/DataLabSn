@@ -11,9 +11,9 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from datalab.models.predictor import Predictor
+from datalabsn.models.predictor import Predictor
 
-st.set_page_config(page_title="Prédictions · DataLab", page_icon="🔮", layout="wide")
+st.set_page_config(page_title="Prédictions · DataLabSn", page_icon="🔮", layout="wide")
 st.title("🔮 Prédictions")
 st.caption("Utilisez votre modèle entraîné pour prédire de nouvelles données.")
 

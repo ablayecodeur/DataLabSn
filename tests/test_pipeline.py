@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from datalab.pipeline import DataIngestion, DataPreprocessor, DataValidator, FeatureEngineer
+from datalabsn.pipeline import DataIngestion, DataPreprocessor, DataValidator, FeatureEngineer
 
 
 @pytest.fixture

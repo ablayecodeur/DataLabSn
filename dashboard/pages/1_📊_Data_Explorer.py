@@ -12,10 +12,10 @@ import plotly.figure_factory as ff
 import plotly.graph_objects as go
 import streamlit as st
 
-from datalab.pipeline import DataIngestion, DataValidator
-from datalab.pipeline.ingestion import SAMPLE_DATASETS
+from datalabsn.pipeline import DataIngestion, DataValidator
+from datalabsn.pipeline.ingestion import SAMPLE_DATASETS
 
-st.set_page_config(page_title="Data Explorer · DataLab", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Data Explorer · DataLabSn", page_icon="📊", layout="wide")
 st.title("📊 Data Explorer")
 st.caption("Chargez et explorez vos données en profondeur.")
 

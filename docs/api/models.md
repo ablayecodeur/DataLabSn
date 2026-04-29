@@ -3,7 +3,7 @@
 ## ModelRegistry
 
 ```python
-from datalab.models import ModelRegistry
+from datalabsn.models import ModelRegistry
 ```
 
 Registre centralisé de tous les algorithmes disponibles.
@@ -93,7 +93,7 @@ classifiers = ModelRegistry.list_models("classification")
 ## ModelTrainer
 
 ```python
-from datalab.models import ModelTrainer
+from datalabsn.models import ModelTrainer
 ```
 
 ### Constructeur
@@ -185,7 +185,7 @@ print(df.to_string(index=False))
 ## Predictor
 
 ```python
-from datalab.models.predictor import Predictor
+from datalabsn.models.predictor import Predictor
 ```
 
 ### Constructeur

@@ -1,6 +1,6 @@
 # Guide utilisateur — Data Explorer
 
-La page **📊 Data Explorer** est le point d'entrée de tout workflow DataLab. Elle permet de charger et d'explorer en profondeur n'importe quel dataset avant de passer au preprocessing.
+La page **📊 Data Explorer** est le point d'entrée de tout workflow DataLabSn. Elle permet de charger et d'explorer en profondeur n'importe quel dataset avant de passer au preprocessing.
 
 ---
 

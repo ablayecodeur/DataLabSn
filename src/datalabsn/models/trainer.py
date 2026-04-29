@@ -14,7 +14,7 @@ from sklearn.model_selection import (
     train_test_split,
 )
 
-from datalab.utils import get_logger
+from datalabsn.utils import get_logger
 from .registry import ModelRegistry
 
 logger = get_logger(__name__)

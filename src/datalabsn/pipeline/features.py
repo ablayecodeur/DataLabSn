@@ -12,7 +12,7 @@ from sklearn.feature_selection import (
     mutual_info_regression,
 )
 
-from datalab.utils import get_logger
+from datalabsn.utils import get_logger
 
 logger = get_logger(__name__)
 

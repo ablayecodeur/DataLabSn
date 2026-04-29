@@ -7,8 +7,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 import pandas as pd
-from datalab.pipeline import DataIngestion, DataPreprocessor
-from datalab.models import ModelTrainer
+from datalabsn.pipeline import DataIngestion, DataPreprocessor
+from datalabsn.models import ModelTrainer
 
 
 BENCHMARKS = [

@@ -3,14 +3,14 @@ requires = ["setuptools>=68.0", "wheel"]
 build-backend = "setuptools.backends.legacy:build"
 
 [project]
-name = "datalab"
+name = "datalabsn"
 version = "1.0.0"
 description = "Plateforme d'analyse de données et de machine learning"
 readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "DataLab", email = "datalab@example.com"}
+    {name = "DataLabSn", email = "datalabsn@example.com"}
 ]
 keywords = ["machine-learning", "data-analysis", "pandas", "scikit-learn", "streamlit"]
 classifiers = [
@@ -23,14 +23,14 @@ classifiers = [
 ]
 
 [project.scripts]
-datalab = "datalab.cli:main"
+datalabsn = "datalabsn.cli:main"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "--cov=src/datalab --cov-report=term-missing"
+addopts = "--cov=src/datalabsn --cov-report=term-missing"
 
 [tool.setuptools.packages.find]
 where = ["src"]

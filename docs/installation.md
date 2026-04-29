@@ -15,8 +15,8 @@
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-username/DataLab.git
-cd DataLab
+git clone https://github.com/votre-username/DataLabSn.git
+cd DataLabSn
 ```
 
 ### 2. Créer un environnement virtuel
@@ -75,8 +75,8 @@ pytest tests/ -v
 ## Installation avec conda
 
 ```bash
-conda create -n datalab python=3.11
-conda activate datalab
+conda create -n datalabsn python=3.11
+conda activate datalabsn
 pip install -r requirements.txt
 streamlit run dashboard/app.py
 ```
@@ -97,7 +97,7 @@ DATALAB_CV_FOLDS=5
 
 ## Résolution de problèmes courants
 
-### `ModuleNotFoundError: No module named 'datalab'`
+### `ModuleNotFoundError: No module named 'datalabsn'`
 
 Le package source n'est pas dans le PYTHONPATH. Lancez depuis la racine du projet ou installez en mode éditable :
 

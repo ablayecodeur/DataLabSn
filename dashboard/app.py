@@ -1,4 +1,4 @@
-"""DataLab — Page d'accueil du dashboard."""
+"""DataLabSn — Page d'accueil du dashboard."""
 
 import sys
 from pathlib import Path
@@ -8,7 +8,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 import streamlit as st
 
 st.set_page_config(
-    page_title="DataLab",
+    page_title="DataLabSn",
     page_icon="🔬",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -59,7 +59,7 @@ st.markdown("""
 
 def main():
     # Hero section
-    st.markdown('<div class="hero-title">🔬 DataLab</div>', unsafe_allow_html=True)
+    st.markdown('<div class="hero-title">🔬 DataLabSn</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="hero-subtitle">'
         'Plateforme d\'analyse de données et de machine learning'
@@ -163,7 +163,7 @@ def main():
     | Configuration | **YAML**, **Pydantic** |
     """)
 
-    st.caption("DataLab v1.0.0 · Construit avec Streamlit · Python 3.10+")
+    st.caption("DataLabSn v1.0.0 · Construit avec Streamlit · Python 3.10+")
 
 
 if __name__ == "__main__":

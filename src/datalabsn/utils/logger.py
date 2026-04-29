@@ -21,7 +21,7 @@ def get_logger(name: str, level: int = logging.INFO) -> logging.Logger:
 
     log_dir = Path("logs")
     log_dir.mkdir(exist_ok=True)
-    file_handler = logging.FileHandler(log_dir / "datalab.log")
+    file_handler = logging.FileHandler(log_dir / "datalabsn.log")
     file_handler.setFormatter(fmt)
     logger.addHandler(file_handler)
 

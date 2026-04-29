@@ -77,7 +77,7 @@ Nom du fichier : random_forest.joblib
 ### Recharger un modèle sauvegardé
 
 ```python
-from datalab.models.predictor import Predictor
+from datalabsn.models.predictor import Predictor
 
 predictor = Predictor.load("models/saved/random_forest.joblib")
 predictions = predictor.predict(new_data)
@@ -87,6 +87,6 @@ predictions = predictor.predict(new_data)
 
 ## Bonnes pratiques
 
-- Assurez-vous que les données à prédire ont été **prétraitées de la même façon** que les données d'entraînement. Si vous avez utilisé le pipeline DataLab, rechargez le `preprocessor` sauvegardé en session.
+- Assurez-vous que les données à prédire ont été **prétraitées de la même façon** que les données d'entraînement. Si vous avez utilisé le pipeline DataLabSn, rechargez le `preprocessor` sauvegardé en session.
 - Les valeurs catégorielles inconnues (non vues à l'entraînement) sont gérées par `handle_unknown='ignore'` dans OneHotEncoder — elles donnent une colonne de zéros.
 - La **confiance** n'est pas un indicateur absolu de correction — un modèle peut être confiant et faux. Utilisez-la comme indicateur relatif.

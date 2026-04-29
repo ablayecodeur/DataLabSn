@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from sklearn import datasets as sk_datasets
 
-from datalab.utils import get_logger
+from datalabsn.utils import get_logger
 
 logger = get_logger(__name__)
 

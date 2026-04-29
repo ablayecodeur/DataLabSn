@@ -7,7 +7,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
 import pandas as pd
-from datalab.pipeline import DataIngestion
+from datalabsn.pipeline import DataIngestion
 
 
 def main():
