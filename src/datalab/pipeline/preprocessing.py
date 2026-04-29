@@ -76,7 +76,7 @@ class DataPreprocessor:
 
         if drop_duplicates:
             before = len(df)
-            df = df.drop_duplicates()
+            df = df.drop_duplicates().reset_index(drop=True)
             removed = before - len(df)
             if removed:
                 logger.info("Doublons supprimés : %d", removed)

@@ -75,11 +75,9 @@ class DataIngestion:
 
     def _load_sklearn(self, name: str, task: str):
         def _inner():
-            fn = getattr(sk_datasets, name if name != "fetch_california_housing" else "fetch_california_housing")
-            if name == "fetch_california_housing":
-                ds = sk_datasets.fetch_california_housing()
-            else:
-                ds = fn()
+            fn_name = "fetch_california_housing" if name == "fetch_california_housing" else f"load_{name}"
+            fn = getattr(sk_datasets, fn_name)
+            ds = fn()
             X = pd.DataFrame(ds.data, columns=ds.feature_names)
             y = pd.Series(ds.target, name="target")
             logger.info("Dataset sklearn '%s' chargé : %d lignes", name, len(X))

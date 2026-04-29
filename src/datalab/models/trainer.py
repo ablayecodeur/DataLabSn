@@ -57,6 +57,11 @@ class ModelTrainer:
         search_strategy: str = "grid",
         n_iter: int = 20,
     ) -> TrainingResult:
+        # Aligner X et y sur l'index commun (drop_duplicates peut réduire X)
+        if isinstance(X, pd.DataFrame) and isinstance(y, pd.Series):
+            common_idx = X.index.intersection(y.index)
+            X = X.loc[common_idx]
+            y = y.loc[common_idx]
         X_arr = X.values if isinstance(X, pd.DataFrame) else X
         y_arr = y.values if isinstance(y, pd.Series) else y
 
