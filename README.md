@@ -134,7 +134,7 @@ Données brutes → Pipeline → Modèle entraîné → Évaluation → Prédict
 
 ```bash
 # 1. Cloner le dépôt
-git clone https://github.com/votre-username/DataLabSn.git
+git clone https://github.com/ablayecodeur/DataLabSn.git
 cd DataLabSn
 
 # 2. Créer et activer un environnement virtuel

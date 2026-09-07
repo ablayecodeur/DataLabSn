@@ -61,3 +61,7 @@ logs/
 # Env
 .env
 .env.local
+
+# Test artifacts
+.coverage
+htmlcov/

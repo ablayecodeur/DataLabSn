@@ -15,7 +15,7 @@
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/votre-username/DataLabSn.git
+git clone https://github.com/ablayecodeur/DataLabSn.git
 cd DataLabSn
 ```
 
