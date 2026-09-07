@@ -6,7 +6,7 @@ Merci de l'intérêt que vous portez à DataLabSn ! Ce guide explique comment co
 
 ## Avant de commencer
 
-- Consultez les [issues ouvertes](https://github.com/votre-username/DataLabSn/issues) pour éviter les doublons
+- Consultez les [issues ouvertes](https://github.com/ablayecodeur/DataLabSn/issues) pour éviter les doublons
 - Pour une nouvelle fonctionnalité, ouvrez d'abord une issue pour en discuter
 - Pour un bug fix, vous pouvez directement ouvrir une Pull Request
 
@@ -165,4 +165,4 @@ def test_xgboost_instantiate(self):
 
 ## Questions ?
 
-Ouvrez une [Discussion GitHub](https://github.com/votre-username/DataLabSn/discussions) ou une issue avec le label `question`.
+Ouvrez une [Discussion GitHub](https://github.com/ablayecodeur/DataLabSn/discussions) ou une issue avec le label `question`.
