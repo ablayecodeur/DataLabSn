@@ -8,6 +8,7 @@ Pipeline de traitement · Modèles prédictifs · Dashboard interactif
 
 ---
 
+[![CI](https://github.com/ablayecodeur/DataLabSn/actions/workflows/ci.yml/badge.svg)](https://github.com/ablayecodeur/DataLabSn/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?style=flat-square&logo=python&logoColor=white)](https://python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3%2B-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)](https://scikit-learn.org)
@@ -37,7 +38,7 @@ Données brutes → Pipeline → Modèle entraîné → Évaluation → Prédict
 
 - **Aucun code requis** pour les tâches courantes via le dashboard Streamlit
 - **API Python complète** pour les workflows automatisés et les pipelines CI/CD
-- **17 algorithmes ML** prêts à l'emploi avec optimisation d'hyperparamètres
+- **19 algorithmes ML** prêts à l'emploi avec optimisation d'hyperparamètres
 - **7 datasets intégrés** pour démarrer immédiatement sans données
 - **Export complet** : prédictions CSV, modèles sérialisés `.joblib`
 
@@ -275,6 +276,13 @@ DataLabSn/
 
 DataLabSn peut être utilisé entièrement en Python, sans le dashboard.
 
+Le package se trouve dans `src/` : lancez vos scripts depuis la racine du dépôt en ajoutant ce dossier au chemin Python.
+
+```bash
+export PYTHONPATH=src        # Linux / macOS
+# $env:PYTHONPATH = "src"   # Windows PowerShell
+```
+
 ### Exemple complet — Classification
 
 ```python
@@ -399,8 +407,8 @@ pytest tests/ --cov=src/datalabsn --cov-report=html
 ### Par module
 
 ```bash
-pytest tests/test_pipeline.py   -v   # Pipeline : 20 tests
-pytest tests/test_models.py     -v   # Modèles  : 16 tests
+pytest tests/test_pipeline.py   -v   # Pipeline : 19 tests
+pytest tests/test_models.py     -v   # Modèles  : 17 tests
 pytest tests/test_evaluation.py -v   # Éval     : 9 tests
 ```
 
@@ -481,7 +489,7 @@ La documentation complète est disponible dans le dossier [`docs/`](docs/) :
 
 | Document | Description |
 |---|---|
-| [Guide d'installation](docs/installation.md) | Installation détaillée, environnements virtuels, Docker |
+| [Guide d'installation](docs/installation.md) | Installation détaillée, environnements virtuels, dépannage |
 | [Guide utilisateur — Data Explorer](docs/user_guide/data_explorer.md) | Exploration des données pas à pas |
 | [Guide utilisateur — Pipeline](docs/user_guide/pipeline.md) | Preprocessing : stratégies et recommandations |
 | [Guide utilisateur — Entraînement](docs/user_guide/model_training.md) | Choix du modèle, tuning, comparaison |
@@ -514,12 +522,11 @@ La documentation complète est disponible dans le dossier [`docs/`](docs/) :
 |---|---|---|
 | Langage | Python | 3.10+ |
 | Traitement de données | Pandas | 2.0+ |
-| Calcul numérique | NumPy + SciPy | 1.24+ / 1.10+ |
+| Calcul numérique | NumPy | 1.24+ |
 | Machine Learning | scikit-learn | 1.3+ |
 | Dashboard | Streamlit | 1.28+ |
-| Visualisation | Plotly + Seaborn + Matplotlib | 5.15+ / 0.12+ / 3.7+ |
+| Visualisation | Plotly | 5.15+ |
 | Sérialisation | Joblib | 1.3+ |
-| Validation de données | Pydantic | 2.0+ |
 | Configuration | PyYAML | 6.0+ |
 | Formats fichiers | openpyxl + pyarrow | 3.1+ / 12.0+ |
 | Tests | pytest + pytest-cov | 7.4+ / 4.1+ |
@@ -560,6 +567,15 @@ Types de contributions appréciées :
 - [ ] Support des séries temporelles (ARIMA, Prophet)
 - [ ] Mode multi-utilisateur avec historique des expériences
 - [ ] Intégration MLflow pour le tracking des expériences
+
+---
+
+## Auteur
+
+Développé par **[Ablaye Codeur](https://github.com/ablayecodeur)**
+
+- GitHub : [@ablayecodeur](https://github.com/ablayecodeur)
+- Email : ablayecodeur@gmail.com
 
 ---
 
